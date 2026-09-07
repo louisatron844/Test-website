@@ -41,7 +41,7 @@ window.AFE_CONFIG = Object.freeze({
 });
 ```
 
-All call and WhatsApp buttons are wired via `data-afe-tel` / `data-afe-wa` and filled from these constants — do not hardcode `tel:` or `wa.me` links elsewhere.
+Call and WhatsApp hrefs are baked into the HTML so CTAs still work without JavaScript. `script.js` only validates the config, then refreshes hrefs and labels when the values pass those checks.
 
 ## Deploy / copy into Test-website
 
